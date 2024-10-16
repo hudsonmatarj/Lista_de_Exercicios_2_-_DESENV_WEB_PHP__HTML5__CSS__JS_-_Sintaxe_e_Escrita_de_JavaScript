@@ -1,0 +1,16 @@
+function contarOcorrencias(arr) {
+    const ocorrencias = {};
+
+    arr.forEach(num => {
+        if (ocorrencias[num]) {
+            ocorrencias[num]++;
+        } else {
+            ocorrencias[num] = 1;
+        }
+    });
+
+    return ocorrencias;
+}
+const numeros = [1, 2, 2, 3, 4, 4, 4, 5];
+const resultado = contarOcorrencias(numeros);
+console.log(resultado);
