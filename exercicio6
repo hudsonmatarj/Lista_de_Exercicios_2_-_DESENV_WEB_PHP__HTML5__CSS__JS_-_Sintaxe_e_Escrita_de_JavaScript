@@ -1,0 +1,13 @@
+function substituirElemento(array, valorAntigo, novoValor) {
+  
+    return array.map(elemento => {
+        return elemento === valorAntigo ? novoValor : elemento;
+    });
+}
+
+const arrayOriginal = [1, 2, 3, 2, 4, 2, 5];
+const valorAntigo = 2;
+const novoValor = 99;
+
+const novoArray = substituirElemento(arrayOriginal, valorAntigo, novoValor);
+console.log(novoArray); 
